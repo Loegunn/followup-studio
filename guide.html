@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>工具介绍与核对规则 · 跟进核对台</title><link rel="stylesheet" href="ui.css"><style>
+.guide-nav{display:flex;gap:16px;align-items:center}.guide-nav a{font-weight:600;text-decoration:none}.guide-lead{max-width:760px;font-size:16px;line-height:1.9}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.guide-grid article{padding:22px;border-radius:14px;background:#e9f7f4}.guide-grid article:nth-child(2){background:#f0ebfb}.guide-grid article:nth-child(3){background:#fff1e4}.guide-grid h3{margin:0 0 10px;font-size:16px}.guide-grid p{margin:0}.guide-card h2{margin-bottom:16px}.guide-card p,.guide-card li{line-height:1.9}.guide-table{overflow:auto}.guide-table th{position:static;font-size:13px}.guide-table td{font-size:14px;min-width:140px}.guide-table td:first-child{min-width:80px;font-weight:700}.guide-note{padding:16px 20px;border-left:4px solid #aa8bd1;background:#f4effc;border-radius:8px;margin:20px 0}.guide-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.guide-links a{padding:8px 14px;border:1px solid #cce3e3;border-radius:24px;text-decoration:none;background:white}.guide-card{scroll-margin-top:24px}.guide-card li+li{margin-top:8px}.guide-foot{display:inline-block;padding:12px 20px;background:#087f83;color:white;text-decoration:none;border-radius:10px}.guide-card details{margin-top:14px}.guide-card summary{font-size:14px} @media(max-width:760px){.guide-grid{grid-template-columns:1fr}.guide-lead{font-size:14px}.guide-nav{gap:8px}.guide-nav a{font-size:12px}.guide-table td{font-size:13px}.guide-table th,.guide-table td{padding:12px}.topbar .brand{font-size:13px}.guide-card ul,.guide-card ol{padding-left:22px}} @media print{.guide-links,.guide-foot{display:none}}
+</style></head><body>
+<nav class="topbar"><a class="brand" href="index.html"><span class="brand-mark">跟</span>跟进核对台</a><div class="guide-nav"><a href="index.html">返回核对工具 ↗</a></div></nav>
+<header><div class="eyebrow">使用指南 / 核对口径</div><h1>系统导出之后，<br>让跟进进度更清楚<span>。</span></h1><p class="guide-lead">从工作系统导出服务对象资料，先删除不必要的敏感信息，再将 Excel / CSV 导入这里。选择检查开始日和截止日，就能初步查看谁有跟进记录、哪些月份或季度需要补充核实，并查看对应的原始记录依据。</p><div class="guide-links"><a href="#start-guide">怎样使用</a><a href="#frequency">跟进频率</a><a href="#evidence">什么记录算数</a><a href="#principles">判读原则</a><a href="#privacy-guide">隐私与限制</a></div></header>
+<main>
+<section class="card guide-card" id="start-guide"><h2>01 · 从系统导出，到查看进度</h2><div class="guide-grid"><article><h3>① 导出并脱敏</h3><p>从工作系统导出 Excel / CSV，另存副本。删除身份证、电话、详细地址及记录内不必要的敏感信息。</p></article><article><h3>② 导入并设置期间</h3><p>选择一个或多个文件，确认字段匹配及资料提示，再设置开始日、截止日和适用口径。</p></article><article><h3>③ 查看并人工复核</h3><p>查看概览及缺口，点击姓名查看评级时间线、服务依据；填写复核备注后，可导出结果或打印。</p></article></div>
+<p><b>不用为了导入而修改系统导出的文件名。</b>工具识别的是表内字段；无法自动识别时，可手动选择对应列。支持 XLSX、XLS、CSV，并读取文件中的工作表。</p><p><b>建议保留：</b>姓名、带生效日期的服务评级历史，以及带完整服务日期的“服务跟进”或“服务过程记录”。如需核对分类标签，还应保留年龄、残疾等级和人员类别。入册日期、服务成效可作为辅助资料。</p><p>缺列、文件无法读取或日期无法识别时，工具会给出资料检查提示。可以先补齐再导入；继续检查时，资料不完整的结论仍需人工核实。每次成功导入会替换当前名册，多个文件的人员分开保留，不会仅凭同名自动合并。</p></section>
+<section class="card guide-card" id="frequency"><h2>02 · 当前默认跟进频率</h2><div class="guide-note"><b>规则依据是什么？</b><br>本工具按使用者提供并确认的工作核对口径设置，用于辅助检查系统导出记录。目前未附经核验的正式制度原文或文件编号，因此不应视为政府官方标准或机构正式考核系统。使用前请与所在机构现行要求核对；如口径不同，应调整可配置项或另行人工核查。</div>
+<div class="guide-table"><table><thead><tr><th>服务等级</th><th>联系 / 跟进要求</th><th>见面 / 入户要求及工具处理</th></tr></thead><tbody>
+<tr><td>一级、二级</td><td>未内置完整频率标准</td><td>提示按机构要求人工核查，不能据此判断达标。</td></tr>
+<tr><td>三级</td><td>每月至少一次跟进。</td><td>当前按每自然季度至少一次实际见面筛查；本人实际参加活动、小组、社区服务或面对面个案，可按已确认口径计入。若机构要求必须入户，须另查入户证据。</td></tr>
+<tr><td>四级</td><td>每自然季度至少一次跟进。</td><td>原始要求为每年至少一次入户；当前工具按所选“见面”方式筛查年度证据，不能单凭活动等见面记录认定已完成入户。年度未结束时，缺证据列待核实。</td></tr>
+<tr><td>五级</td><td>默认每半年至少跟进一次。</td><td>电话等有效联系可计入，不设每季度见面要求。</td></tr>
+<tr><td>六级</td><td>默认每半年至少联系一次。</td><td>有效联系即可，不要求一定上门。</td></tr>
+</tbody></table></div>
+<p>五、六级的联系间隔默认设为6个月，可在主页调整。工具会对截止日为五、六级的人员参考其相应评级期间的最近联系日期，推算联系间隔；这不等同机构固定半年考核期，也不代表已完整检查所有历史五、六级阶段。</p></section>
+<section class="card guide-card" id="evidence"><h2>03 · 哪些服务记录可以计入？</h2><ul>
+<li><b>联系与见面分开：</b>探访、活动、小组、社区服务、个案、红棉热线、电访、电话等可作为联系线索，但须确认服务实际有效。热线和电话不能算见面，简表也无法证明是否接通。</li>
+<li><b>见面看实际参与：</b>探访、活动、小组、社区服务默认勾选为见面方式；应确认本人到场或实际接受面对面服务。个案默认不勾选，因为个案也可能通过电话开展；确认面对面后再调整。</li>
+<li><b>“其他服务”不直接当见面：</b>未知方式默认计作联系、见面待核实；可改为联系与见面均待核实。请阅读原始服务内容后判断。</li>
+<li><b>总次数不替代日期证据：</b>“服务成效”原文可在人员详情查看，仅作辅助。仅有“联系7次”或“参与社区服务”等汇总，没有具体日期，不能证明对应月份或季度已覆盖。</li>
+<li><b>统计的是覆盖天数：</b>同日同方式记录合并用于覆盖核对；同日多项服务在联系天数中只算一天。此数字不等于系统服务次数或人次。</li>
+</ul></section>
+<section class="card guide-card" id="principles"><h2>04 · 核对遵循的原则</h2>
+<details open><summary>以当时生效的服务评级为准，不用最新等级覆盖历史</summary><p>例如10月转为五级，不能据此覆盖5—9月的三级要求。无初始评级时不倒推；首次评级日期也不自动当作入册日期。月中转级或只检查部分季度时，默认列待核实，也可选择从生效日起检查。</p></details>
+<details open><summary>以选择的时间窗口为准，区分“未见记录”和“不达标”</summary><p>主页默认2026年5月1日至9月30日，可自行修改。自然季度为1—3月、4—6月、7—9月、10—12月；5月开始属于第二季度的部分期间。未结束的月份、季度仅提示进度，年度未到年末不直接判全年缺口。评级日期、系统更新时间均不当作服务日期。</p><p>截止日之后的记录不计入本次结果；开始日前的记录可用于最近联系或年度证据参考，不能替代本期逐月要求。五、六级在窗口内无记录，只说明该时段未见记录；窗口不足半年时，不能仅凭零记录判定超期，应结合更早联系、入册及转级情况核实。</p></details>
+<details><summary>以证据为准，不自动推定豁免</summary><p>拒绝入户、拒绝服务、住院、居住外区或暂停服务等，需核查证明的日期、覆盖范围及机构认可情况。仅拒绝入户，不自动豁免电话联系。备注不作为服务记录，工具也不会自动把有证明的项目判为合格。</p></details>
+<details><summary>残疾等级与服务评级分开处理</summary><p>残疾等级一至四级不等于服务评级一至六级。当前分类提示按年满60岁且一级或二级残疾核查“重残老年人”标签；具体年龄、等级文字及系统分类仍需人工确认。标签问题不代表服务评级一定错误，也不会自动将五、六级改为三级。</p></details>
+<details><summary>资料不足优先提示，不把不确定内容当结论</summary><p>缺少带日期评级、服务日期无法识别等，会提示“资料不足”或“待核实”。“记录缺口”表示导出记录未覆盖相应要求；“已见所需记录”也仅代表当前规则下已识别到证据，不是正式考核通过。</p></details></section>
+<section class="card guide-card" id="privacy-guide"><h2>05 · 隐私与使用边界</h2><p>Excel / CSV 在本机浏览器内读取，工具不会将文件内容、名册、服务记录或复核备注上传到网站服务器或 GitHub，也不会自动保存到浏览器的持久存储。刷新或关闭页面后需重新导入，请及时导出需要保留的结果。</p><p>工具不会自动脱敏，也不会修改或删除你的原始文件。请先删除不必要的个人资料，并按机构授权范围处理。导出的结果由你自行保管。</p><div class="guide-note">本工具仅作初步筛查，不代表全部正确，也不表示所列项目一定存在问题。请结合原始记录、实际服务、转级时间、适用证明及机构现行口径，再自行查看和核实。</div><a class="guide-foot" href="index.html">返回工具，开始核对 →</a></section><footer>跟进核对台 · 使用指南 · 说明对应当前工具默认口径</footer></main></body></html>
