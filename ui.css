@@ -21,3 +21,5 @@ button{background:#087f83}button:hover{background:#06676e;box-shadow:0 4px 12px 
 th{background:#eef6f8;color:#607b85}.filters input{background:#f7fbfc}#types label{background:#eaf6f4;color:#3c7d76}.tag{background:#e1f3e9;color:#2c7a58}.tag.warn{background:#fff0c6;color:#947023}.tag.bad{background:#ffe7df;color:#b85e43}.empty-icon{background:#e2f5f4;border-color:#c7e6e3;color:#198d8b}.empty h3{color:#4c7780}
 @media(max-width:760px){header{padding-left:12px;padding-right:12px}.workflow{gap:6px;flex-wrap:wrap}.workflow span{padding:6px 8px}.workflow em{display:none}}
 @media print{header{background:none}.stat{background:white!important}}
+
+@media(max-width:760px){.topbar:has(a[href="guide.html"]) .local-badge{display:none}.topbar a[href="guide.html"]{margin-right:0!important;font-size:12px!important;white-space:nowrap}.topbar:has(a[href="guide.html"]){gap:12px}.topbar:has(a[href="guide.html"]) .brand{gap:8px;font-size:13px}}
